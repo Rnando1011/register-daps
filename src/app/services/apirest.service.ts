@@ -10,7 +10,6 @@ import { Empleado } from '../shared/Empleado';
 import { AlertController } from '@ionic/angular';
 import { Platform } from '@ionic/angular';
 
-
 import { CapacitorHttp, HttpResponse } from '@capacitor/core';
 import { Router } from '@angular/router';
 
@@ -99,7 +98,6 @@ export class APIRESTService {
       console.log("Usuario: "+usuario.Usuario+"  "+usuario.Password);
 
       if (this.platform.is('hybrid')) {
-
         const options = {
           url: url,
           headers: { 'Content-Type': 'application/json',
